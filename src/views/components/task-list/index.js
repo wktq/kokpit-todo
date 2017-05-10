@@ -4,7 +4,7 @@ import TaskItem from '../task-item';
 
 
 function TaskList({deleteTask, tasks, updateTask}) {
-  let taskItems = tasks.map((task, index) => {
+  let taskItems = tasks.slice(0).reverse().map((task, index) => {
     return (
       <TaskItem
         deleteTask={deleteTask}

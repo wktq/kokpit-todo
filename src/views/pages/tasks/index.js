@@ -59,10 +59,6 @@ export class Tasks extends Component {
     return (
       <div className="g-row">
         <div className="g-col">
-          <TaskForm createTask={this.props.createTask} />
-        </div>
-
-        <div className="g-col">
           <TaskFilters filter={this.props.filterType} />
           <TaskList
             deleteTask={this.props.deleteTask}
@@ -70,7 +66,9 @@ export class Tasks extends Component {
             updateTask={this.props.updateTask}
           />
         </div>
-
+        <div className="g-col">
+          <TaskForm createTask={this.props.createTask} />
+        </div>
         {this.props.notification.display ? this.renderNotification() : null}
       </div>
     );

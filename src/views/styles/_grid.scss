@@ -8,5 +8,6 @@
 
 .g-col {
   @include grid-column;
+  padding: 0 8px;
   width: 100%;
 }

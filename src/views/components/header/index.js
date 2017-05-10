@@ -6,10 +6,9 @@ const Header = ({authenticated, signOut}) => {
     <header className="header">
       <div className="g-row">
         <div className="g-col">
-          <h1 className="header__title">Todo React Redux</h1>
-
+          <h1 className="header__title">Kokpit Todo</h1>
           <ul className="header__actions">
-            {authenticated ? <li><button className="btn" onClick={signOut}>Sign out</button></li> : null}
+            {authenticated ? <li><button className="btn" onClick={signOut}>ログイン</button></li> : null}
             <li><a className="link link--github" href="https://github.com/r-park/todo-react-redux"></a></li>
           </ul>
         </div>
